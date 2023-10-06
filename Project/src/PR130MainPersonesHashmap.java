@@ -56,8 +56,9 @@ public class PR130MainPersonesHashmap {
 
             try {
                 while(true) {
-                    System.out.println(dis.readUTF());
-                    System.out.println(dis.readInt());
+                    String clave = dis.readUTF();
+                    Integer valor = dis.readInt();
+                    System.out.println("Nom: " + clave + ", edat: " + valor);
                 }
             } catch (IOException e) { 
                 System.out.println("Read Done");
